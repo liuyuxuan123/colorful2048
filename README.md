@@ -15,13 +15,13 @@ and when you get higher grade you will see a more colorful interface
 Inside this project,I create a class called GameField:
 
 ##properties:
-*height,                     //number of row.  
-*width,                      //number of column. 
-*win_value,                  //How many score do you need to win? 
-*score,                      //current score.
-*high_socre,                 //highest score you ever have. 
+'height',                     //number of row.  
+'width',                      //number of column. 
+'win_value',                  //How many score do you need to win? 
+'score',                      //current score.
+'high_socre',                 //highest score you ever have. 
                                                             
-*field,                      // I create this in reset()   
+'field',                      // I create this in reset()   
                               //according to your given height and width to make a field 
 ##method:
   reset(self)                 //called in __init__ 
