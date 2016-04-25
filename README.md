@@ -24,9 +24,9 @@ Inside this project,I create a class called GameField:
 `field`,                       I create this in reset()   <br>
                               according to your given height and width to make a field <br>
 ##method:
-  reset(self)                 called in __init__ 
+  `reset(self)`                 called in __init__ 
                               create field and also create two spawn 
-  move(self,direction)        inside this function I create move_row_left function 
+  `move(self,direction)`        inside this function I create move_row_left function 
                               to control how to a row of it to move to left
                               and inside this function there is two function 
                               called tighten and merge
@@ -73,19 +73,19 @@ Inside this project,I create a class called GameField:
                                   else:
                                       return False
                           
-  is_win(self)                  this is a function to determine wether you win this game
+  `is_win(self)`                  this is a function to determine wether you win this game
                                 
                                 return any(any(i >= self.win_value for i in row) for row in self.field)
-  is_gameover(self)             this is a function to determine wether you can not move
+  `is_gameover(self)`             this is a function to determine wether you can not move
             
                                 return not any(self.move_is_possible(move) for move in actions)
-  spawn(self)                   create an spawn randomly
+  `spawn(self)`                   create an spawn randomly
                                 
                                 new_element = 4 if randrange(100) > 89 else 2
                                 (i,j) = choice([(i,j) for i in range(self.width) for j in range(self.height) if self.field[i][j] == 0])
                                 self.field[i][j] = new_element
   
-  move_is_possible(self,direction)    this function is quietly similar to move(self,derection)
+  `move_is_possible(self,direction)`   this function is quietly similar to move(self,derection)
                                       def row_is_left_movable(row):
                                           def change(i):
                                               if row[i] == 0 and row[i + 1] != 0
@@ -102,7 +102,7 @@ Inside this project,I create a class called GameField:
                                           return check[direction](self.field)
                                       else:
                                           return False
-  draw(self,screen)
+  `draw(self,screen)`
                                 
                                       
       
