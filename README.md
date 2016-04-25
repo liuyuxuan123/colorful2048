@@ -88,6 +88,8 @@ Inside this project,I create a class called GameField:
                                 self.field[i][j] = new_element
   
   `move_is_possible(self,direction)`   this function is quietly similar to move(self,derection)<br>
+                                      
+                                      
                                       def row_is_left_movable(row):
                                           def change(i):
                                               if row[i] == 0 and row[i + 1] != 0
