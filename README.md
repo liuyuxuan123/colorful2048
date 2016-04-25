@@ -35,6 +35,8 @@ Inside this project,I create a class called GameField:
                               second,when closed field is same number then merge it to be a greater number<br>
                               and after making this function.I create a table to store the position to function<br>
                               like:<br>
+                              
+                              
                           def move_row_left(row):    
                               def tighten(row):
                                   new_row = [ i for i in row if i != 0]
